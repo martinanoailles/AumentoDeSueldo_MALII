@@ -12,29 +12,37 @@ empleado determine el aumento de sueldo a aplicar y
 se lo muestre */
 
 let sueldoEmpleado: number = Number(prompt("Indique su salario actual:"));
-let aumento5Porciento: number = sueldoEmpleado * 0.05;
-let aumento10Porciento: number = sueldoEmpleado * 0.1;
-let aumento20Porciento: number = sueldoEmpleado * 0.2;
+let aumento5Porciento: number = sueldoEmpleado + sueldoEmpleado * 0.05;
+let aumento10Porciento: number = sueldoEmpleado + sueldoEmpleado * 0.1;
+let aumento20Porciento: number = sueldoEmpleado + sueldoEmpleado * 0.2;
 
 if (sueldoEmpleado >= 0 && sueldoEmpleado <= 15000) {
   console.log(
     "Su sueldo tiene un aumento del 20%, y el total es de :",
     aumento20Porciento
   );
+  console.log(aumento20Porciento);
 } else {
   if (sueldoEmpleado > 15000 && sueldoEmpleado <= 20000) {
     console.log(
       "Su sueldo tiene un aumento del 10%, y el total es de: ",
       aumento10Porciento
     );
+    console.log(aumento10Porciento);
   } else {
     if (sueldoEmpleado > 20000 && sueldoEmpleado <= 25000) {
       console.log(
         "Su sueldo tiene un aumento del 5%, y el total es de: ",
         aumento5Porciento
       );
+      console.log(aumento5Porciento);
+    } else {
+      if (sueldoEmpleado > 25000) {
+        console.log("Su sueldo no tiene aumento, el total es de: ");
+        console.log(sueldoEmpleado);
+      }
     }
   }
 }
 
-//POR QUE NO ME SALE EN CONSOLA??
+//POR QUE NO ME SALE EN CONSOLA EN EL PRIMER CONSOLE LOG SI LO PONGOOOO??
